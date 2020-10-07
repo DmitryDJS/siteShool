@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d29e732-ac08-44fe-abf5-7484981c0f8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,12 +165,12 @@
       <workItem from="1589209468367" duration="472000" />
       <workItem from="1601224536674" duration="2381000" />
       <workItem from="1601911731486" duration="630000" />
-      <workItem from="1602062689100" duration="2032000" />
+      <workItem from="1602062689100" duration="2826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20680000" />
+    <option name="totallyTimeSpent" value="21474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
