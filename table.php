@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    $year = strftime('%Y');
+
+?>
 <html>
 
 <head>
@@ -97,7 +101,7 @@
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
+    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?php echo $year?>
     <!-- Нижняя часть страницы -->
   </div>
 </body>

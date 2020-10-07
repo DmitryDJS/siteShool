@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+<?php
+// Установка локали и выбор значений даты.
+setlocale(LC_ALL, "russian");
+$day = strftime('%d');
+$mon = strftime('%B');
+$mon = iconv("windows-1251", "UTF-8", $mon);
+$year = strftime('%Y');
+?>
 
 <head>
   <title>Сайт нашей школы</title>
@@ -22,7 +30,7 @@
     <!-- Заголовок -->
     <!-- Область основного контента -->
       <blockquote>
-          <?php echo strftime ("Сегодня %d-%m-%Y");?>
+          <?php echo 'Сегодня ', $day, ' число, ', $mon, ' месяц, ', $year, ' год.';?>
       </blockquote>
     <h3>Зачем мы ходим в школу?</h3>
     <p>
@@ -58,7 +66,8 @@
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
-    &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
+    &copy; Супер Мега Веб-мастер, 2000 &ndash; <?php echo $year;
+      ?>
     <!-- Нижняя часть страницы -->
   </div>
 </body>
