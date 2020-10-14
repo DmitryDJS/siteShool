@@ -1,3 +1,17 @@
+<?php
+
+    $hour = (int)strftime("%H");
+    $welcome = "Доброй ночи";
+
+    if ($hour >= 6 and $hour < 12){
+        $welcome = "Доброе утро";
+    } elseif ($hour >= 12 and $hour < 18){
+        $welcome = "Добрый день";
+    } elseif ($hour >= 18 and $hour < 23){
+        $welcome = "Добрый вечер";
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <?php
@@ -26,7 +40,7 @@ $year = strftime('%Y');
 
   <div id="content">
     <!-- Заголовок -->
-    <h1>Добро пожаловать на наш сайт!</h1>
+    <h1><?php echo $welcome; ?>, Гость!</h1>
     <!-- Заголовок -->
     <!-- Область основного контента -->
       <blockquote>
