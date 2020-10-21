@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <?php
-$rows = 10;
-$cols = 10;
-$color ="cadetblue";
+function drawTable($cols, $rows, $color)
+{
+    echo "<table border='1'>";
+    for ($tr = 1; $tr <= $rows; $tr++) {
+        echo "<tr>";
+        for ($td = 1; $td <= $cols; $td++) {
+            if ($tr == 1 or $td == 1) {
+                echo "<th style='background: $color'>" . $td * $tr . "</th>";
+            } else
+                echo "<td>" . $td * $tr . "</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
 
+}
 
 ?>
+
+
 <html>
 
 <head>
@@ -46,18 +60,7 @@ $color ="cadetblue";
     </form>
     <!-- Таблица -->
     <?php
-    echo "<table border='1'>";
-    for ($tr = 1; $tr <= $rows; $tr++) {
-        echo "<tr>";
-        for ($td = 1; $td <= $cols; $td++) {
-            if ($tr == 1 or $td == 1) {
-                echo "<th style='background: $color'>" . $td * $tr . "</th>";
-            } else
-                echo "<td>" . $td * $tr . "</td>";
-        }
-        echo "</tr>";
-    }
-    echo "</table>";
+        drawTable(10, 10,"red")
     ?>
     <!-- Таблица -->
     <!-- Область основного контента -->
